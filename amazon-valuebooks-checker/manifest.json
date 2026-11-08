@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "AmazonとValuebooksの連携拡張",
+    "version": "1.0",
+    "description": "Amazonの本がValuebooksで取り扱われているか確認します。",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://www.amazon.co.jp/*", "https://www.valuebooks.jp/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.amazon.co.jp/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

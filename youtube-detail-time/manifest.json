@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube 投稿時間表示",
+    "version": "1.0",
+    "description": "YouTubeの動画に投稿時間を表示します",
+    "permissions": ["tabs"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  

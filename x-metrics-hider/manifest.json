@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "X Metrics Hider",
+  "version": "1.0",
+  "description": "X(旧Twitter)のタイムラインから、いいね数、リツイート数、返信数、表示回数などを非表示にします。",
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "css": ["styles.css"]
+    }
+  ]
+}
